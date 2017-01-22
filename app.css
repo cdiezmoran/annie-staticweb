@@ -1,0 +1,30 @@
+@import './stylesheets/stars.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body, html {
+  height: 100%
+}
+#pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.panel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align:center;
+}
+b {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position:relative;
+  font-size:30px;
+}
