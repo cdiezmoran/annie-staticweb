@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="app.css">
-<title>Annie-versary</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <title>Annie-versary</title>
 </head>
 
 <body>
@@ -12,28 +14,51 @@
     <div id='stars2'></div>
     <div id='stars3'></div>
     <div id='title'>
-      <span>
+      <span class="greet">
         Hola Novia
       </span>
+      <br>
+      <span class="anniever">
+        Hoy cumplimos 1 año!
+      </span>
+    </div>
+    <div id="arrow-down">
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
   </div>
   <div id="pinContainer">
-     <div class="panel first" style="background:#111;">
-        <b>FIRST SLIDE</b>
-     </div>
-     <div class="panel second" style="background:#333;">
-         <b>IN FROM LEFT</b>
-     </div>
-     <div class="panel third" style="background:#555;">
-          <b>IN FROM RIGHT</b>
-     </div>
-     <div class="panel fourth" style="background:#777;">
-          <b>IN FROM TOP</b>
-     </div>
-     <div class="panel fifth" style="background:#999;">
-          <b>IN FROM BOTTOM</b>
-     </div>
-</div>
+    <div class="panel first animateme" style="background:#ccc;">
+      <img id="myimg" class="fotos" src="./img/port1.png">
+      <p class="polaroid-text">Te amo</p>
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="panel second" style="background:#333;">
+      <b>IN FROM LEFT</b>
+    </div>
+    <div class="panel third" style="background:#555;">
+      <b>IN FROM RIGHT</b>
+    </div>
+    <div class="panel fourth" style="background:#777;">
+      <b>IN FROM TOP</b>
+    </div>
+    <div class="panel fifth" style="background:#999;">
+      <b>IN FROM BOTTOM</b>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>

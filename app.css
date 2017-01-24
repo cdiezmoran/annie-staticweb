@@ -1,4 +1,6 @@
 @import './stylesheets/stars.css';
+@import './stylesheets/clouds.css';
+@import './stylesheets/bubbles.css';
 
 body {
   margin: 0;
@@ -20,11 +22,28 @@ body, html {
   position: absolute;
   text-align:center;
 }
-b {
+b, img {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position:relative;
   font-size:30px;
+}
+
+.fotos {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+
+.polaroid-text {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 65px;
+  font: 400 18px/1 'Kaushan Script', cursive;
+  color: #888;
 }

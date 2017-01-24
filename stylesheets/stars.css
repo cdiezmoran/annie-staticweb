@@ -69,9 +69,31 @@
   margin-top: -60px;
   padding-left: 10px;
 }
+
+#arrow-down {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+  font-weight: lighter;;
+  font-size: 3rem;
+}
+
 #title span {
   color: white;
-  font-size: 6rem;
+}
+
+.greet {
+  font-size: 5rem;
+}
+
+.anniever {
+  font-size: 1.5rem;
 }
 
 @keyframes animStar {
