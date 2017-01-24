@@ -25,7 +25,6 @@ $(function () { // wait for document ready
       "./img/port24.png",
       "./img/port25.png",
       "./img/land16.jpg",
-
   	];
 
     // TweenMax can tween any property of any object. We use this object to cycle through the array

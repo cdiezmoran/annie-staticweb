@@ -1,6 +1,7 @@
 @import './stylesheets/stars.css';
 @import './stylesheets/clouds.css';
 @import './stylesheets/bubbles.css';
+@import './stylesheets/snow.css';
 
 body {
   margin: 0;
@@ -46,4 +47,9 @@ b, img {
   bottom: 65px;
   font: 400 18px/1 'Kaushan Script', cursive;
   color: #888;
+}
+
+.video-container {
+  width: 100%;
+  height: 100vh;
 }
