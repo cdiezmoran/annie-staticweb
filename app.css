@@ -32,7 +32,7 @@ b, img {
   font-size:30px;
 }
 
-.fotos {
+.fotos, .fotos2 {
   border: 10px solid #fff;
   border-bottom: 45px solid #fff;
   -webkit-box-shadow: 3px 3px 3px #777;
@@ -44,8 +44,8 @@ b, img {
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: 65px;
-  font: 400 18px/1 'Kaushan Script', cursive;
+  top: 82.5%;
+  font: 400 24px/1 'Kaushan Script', cursive;
   color: #888;
 }
 
