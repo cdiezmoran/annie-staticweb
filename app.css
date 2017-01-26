@@ -23,7 +23,7 @@ body, html {
   position: absolute;
   text-align:center;
 }
-b, img {
+b, img, video {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -32,7 +32,7 @@ b, img {
   font-size:30px;
 }
 
-.fotos, .fotos2 {
+.fotos, .fotos2, .fotos3, .fotos4, .fotos5 {
   border: 10px solid #fff;
   border-bottom: 45px solid #fff;
   -webkit-box-shadow: 3px 3px 3px #777;
@@ -47,6 +47,10 @@ b, img {
   top: 82.5%;
   font: 400 24px/1 'Kaushan Script', cursive;
   color: #888;
+}
+
+video {
+  margin-left: 20%;
 }
 
 .video-container {

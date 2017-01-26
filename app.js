@@ -62,6 +62,79 @@ $(function () { // wait for document ready
     "./img/Agosto/land20.jpg",
   ]
 
+  var images3 = [
+    "./img/Panama/land1.png",
+    "./img/Panama/land2.png",
+    "./img/Panama/land3.jpg",
+    "./img/Panama/land4.jpg",
+    "./img/Panama/land5.jpg",
+    "./img/Panama/land6.jpg",
+    "./img/Panama/land7.jpg",
+    "./img/Panama/land8.jpg",
+    "./img/Panama/land9.jpg",
+    "./img/Panama/land10.jpg",
+    "./img/Panama/land11.jpg",
+    "./img/Panama/land12.jpg",
+    "./img/Panama/land13.jpg",
+    "./img/Panama/land14.jpg",
+    "./img/Panama/land15.jpg",
+    "./img/Panama/land16.jpg",
+    "./img/Panama/land17.jpg",
+    "./img/Panama/square1.jpg",
+    "./img/Panama/square2.jpg",
+    "./img/Panama/square3.jpg",
+    "./img/Panama/square4.jpg",
+    "./img/Panama/square5.jpg",
+    "./img/Panama/port0.jpg",
+    "./img/Panama/port1.jpg",
+    "./img/Panama/port2.jpg",
+    "./img/Panama/port3.jpg",
+    "./img/Panama/port4.png",
+    "./img/Panama/port5.png",
+    "./img/Panama/port6.png",
+    "./img/Panama/port7.jpg",
+    "./img/Panama/port8.jpg",
+    "./img/Panama/land18.jpg",
+    "./img/Panama/land19.jpg",
+    "./img/Panama/land20.jpg",
+  ]
+
+  var images4 = [
+    "./img/Navidad/land1.jpg",
+    "./img/Navidad/land2.jpg",
+    "./img/Navidad/land3.jpg",
+    "./img/Navidad/land4.jpg",
+    "./img/Navidad/land5.jpg",
+    "./img/Navidad/land6.jpg",
+    "./img/Navidad/land7.jpg",
+    "./img/Navidad/land8.jpg",
+    "./img/Navidad/land9.jpg",
+    "./img/Navidad/port1.jpg",
+    "./img/Navidad/port2.jpg",
+    "./img/Navidad/port3.jpg",
+    "./img/Navidad/land10.jpg",
+  ]
+
+  var images5 = [
+    "./img/Juntos/port0.jpg",
+    "./img/Juntos/square1.jpg",
+    "./img/Juntos/land1.jpg",
+    "./img/Juntos/square2.jpg",
+    "./img/Juntos/port1.png",
+    "./img/Juntos/port2.jpg",
+    "./img/Juntos/port3.jpg",
+    "./img/Juntos/port4.jpg",
+    "./img/Juntos/port5.jpg",
+    "./img/Juntos/port6.png",
+    "./img/Juntos/port7.jpg",
+    "./img/Juntos/port8.jpg",
+    "./img/Juntos/port9.jpg",
+    "./img/Juntos/port10.png",
+    "./img/Juntos/land2.png",
+    "./img/Juntos/land3.png",
+    "./img/Juntos/land4.png",
+  ]
+
   // TweenMax can tween any property of any object. We use this object to cycle through the array
   var obj = {curImg: 0};
 
@@ -112,6 +185,85 @@ $(function () { // wait for document ready
     }
   );
 
+  var tween3 = TweenMax.to(obj, 20,
+    {
+      curImg: images3.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",				// only integers so it can be used as an array index
+      immediateRender: true,			// load first image automatically
+      ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        $("#myimg3").attr("src", images3[obj.curImg]); // set the image source
+
+        if (images3[obj.curImg].includes('port')) {
+          $('.fotos3').width(350);
+          $('.fotos3').height(500);
+          $('.polaroid-text').css('top', "81.5%");
+        }
+        else if (images3[obj.curImg].includes('square')) {
+          $('.fotos3').width(500);
+          $('.fotos3').height(500);
+          $('.polaroid-text').css('top', "81.5%");
+        }
+        else {
+          $('.fotos3').width(600);
+          $('.fotos3').height(400);
+          $('.polaroid-text').css('top', "74.5%");
+        }
+      }
+    }
+  );
+
+  var tween4 = TweenMax.to(obj, 10,
+    {
+      curImg: images4.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",				// only integers so it can be used as an array index
+      immediateRender: true,			// load first image automatically
+      ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        $("#myimg4").attr("src", images4[obj.curImg]); // set the image source
+
+        if (images4[obj.curImg].includes('port')) {
+          $('.fotos4').width(350);
+          $('.fotos4').height(500);
+          $('.polaroid-text').css('top', "81.5%");
+        }
+        else {
+          $('.fotos4').width(600);
+          $('.fotos4').height(400);
+          $('.polaroid-text').css('top', "74.5%");
+        }
+      }
+    }
+  );
+
+  var tween5 = TweenMax.to(obj, 10,
+    {
+      curImg: images5.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",				// only integers so it can be used as an array index
+      immediateRender: true,			// load first image automatically
+      ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        $("#myimg5").attr("src", images5[obj.curImg]); // set the image source
+
+        if (images5[obj.curImg].includes('port')) {
+          $('.fotos5').width(350);
+          $('.fotos5').height(500);
+          $('.polaroid-text').css('top', "81.5%");
+        }
+        else if (images5[obj.curImg].includes('square')) {
+          $('.fotos5').width(500);
+          $('.fotos5').height(500);
+          $('.polaroid-text').css('top', "81.5%");
+        }
+        else {
+          $('.fotos5').width(600);
+          $('.fotos5').height(400);
+          $('.polaroid-text').css('top', "74.5%");
+        }
+      }
+    }
+  );
+
   // init
   var controller = new ScrollMagic.Controller();
 
@@ -138,5 +290,17 @@ $(function () { // wait for document ready
 
   var scene2 = new ScrollMagic.Scene({triggerElement: "#pinContainer", offset: 800})
   .setTween(tween2)
+  .addTo(controller);
+
+  var scene3 = new ScrollMagic.Scene({triggerElement: "#pinContainer", offset: 1350})
+  .setTween(tween3)
+  .addTo(controller);
+
+  var scene4 = new ScrollMagic.Scene({triggerElement: "#pinContainer", offset: 1900})
+  .setTween(tween4)
+  .addTo(controller);
+
+  var scene5 = new ScrollMagic.Scene({triggerElement: "#pinContainer", offset: 2425})
+  .setTween(tween5)
   .addTo(controller);
 });
